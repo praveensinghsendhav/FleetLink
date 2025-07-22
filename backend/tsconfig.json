@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "incremental": false,
+    "removeComments": true,
+    "outDir": "./dist",
+    "sourceMap": true,
+    "baseUrl": "./src",
+    "rootDir": "./src",
+     "paths": {
+      "@core": ["api/core/*"] 
+    },
+    "lib": ["dom", "ESNext"],
+    "target": "ES2022",
+    "module": "CommonJS",
+    "allowSyntheticDefaultImports": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src/**/*", "knexfile.ts"],
+  "exclude": ["node_modules", "dist"]
+}
